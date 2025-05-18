@@ -7,12 +7,25 @@
   <meta name="keywords" content="RF, microwave, aerospace, telecom, defense, high-frequency, Anvita" />
   <meta name="author" content="Anvita RF and Microwave Systems" />
   <title>Anvita RF and Microwave Systems</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- Logo Header -->
+  <header>
+    <img src="images/trademark.jpg" alt="Anvita RF Logo" class="logo">
+    <h1>Anvita RF & Microwave Systems<span class="tm">™</span></h1>
+  </header>
+
+  <!-- Navigation -->
   <header>
     <nav>
-      <div class="logo">Anvita RF & Microwave systems</div>
+      <div class="logo">Anvita RF & Microwave Systems</div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -25,13 +38,29 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
     <section class="hero">
       <h1>Innovating the Future of RF & Microwave Systems</h1>
       <p>Serving telecom, defense, and aerospace with cutting-edge components.</p>
     </section>
+
+    <!-- Swiper Image Carousel -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/image1.jpg" alt="Slide 1" /></div>
+        <div class="swiper-slide"><img src="images/image2.jpg" alt="Slide 2" /></div>
+        <div class="swiper-slide"><img src="images/image3.jpg" alt="Slide 3" /></div>
+      </div>
+
+      <!-- Pagination and Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Anvita RF and Microwave Systems</p>
     <div class="socials">
@@ -40,7 +69,29 @@
       <a href="#">Facebook</a>
     </div>
   </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="js/script.js"></script>
+  <!-- Swiper Initialization Script -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 1, // Show only one slide at a time
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
+
+ 
