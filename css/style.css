@@ -1,0 +1,100 @@
+/* Base styles */
+body {
+  background-color: #ffffff;  /* White background */
+  color: #000000;             /* Black text */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+/* Navigation */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #666666; /* Soft hover */
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  color: #333333;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}
+
+footer .socials a {
+  color: #000000;
+  margin: 0 0.5rem;
+}
+
+footer 
+/* === About RF and Microwave Section === */
+.about-rf {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #000000;
+  border-radius: 8px;
+}
+
+.about-rf h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.about-rf p {
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+
+
